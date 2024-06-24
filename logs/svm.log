@@ -1,0 +1,21 @@
+Mon 24 Jun 2024 03:59:14 PM CDT
+$ python3 svm.py 
+Extracted train and validation data.
+[645, 498, 519, 578, 456] ['TP53', 'INS', 'HBB', 'TP53', 'TP53']
+[562, 530, 542, 644, 469] ['TP53', 'INS', 'INS', 'TP53', 'HBB']
+Done preparing data for training.
+Normalized features and encoded labels for some sample examples:
+[[ 1.02615635]
+ [-0.44892998]
+ [-0.23820336]
+ [ 0.35383809]
+ [-0.87038322]] [2 1 0 2 2]
+[[ 0.19328448]
+ [-0.12782275]
+ [-0.00740754]
+ [ 1.01612175]
+ [-0.73993341]] [2 1 1 2 0]
+Now training SVM model..
+Done training, now make predictions on val set
+Validation Accuracy: 34.10%
+

@@ -24,8 +24,8 @@ Each gene sequence consists of 150 characters. Here is an example:
 
 ```
 {
-	gene sequence: ["A","T",...,"C"],
-        gene family: "INS"
+	gene_sequence: ["A","T",...,"C"],
+        gene_family: "INS"
 }
 ```
 
@@ -47,8 +47,8 @@ fields (a dummy example for k=3):
 
 ```
 {
-	gene sequence: ["A","T",...,"C"],
-        gene family: "INS",
+	gene_sequence: ["A","T",...,"C"],
+        gene_family: "INS",
         subseqs_A_k3: 12,
         subseqs_T_k3: 84,
         subseqs_G_k3: 7,

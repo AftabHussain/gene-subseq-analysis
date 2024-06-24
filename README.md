@@ -9,7 +9,7 @@ We apply the approach on a synthetic dataset, where each sample has the followin
 
 ```
 {
-	gene_sequence: <>
+	gene_sequence: <>,
         gene_family: <>
 }
 ```
@@ -24,7 +24,7 @@ Each gene sequence consists of 150 characters. Here is an example:
 
 ```
 {
-	gene sequence: ["A","T",...,"C"]
+	gene sequence: ["A","T",...,"C"],
         gene family: "INS"
 }
 ```
@@ -41,6 +41,20 @@ sequence where the total number of neocleotides of type *N* is *k*.  We find
 this feature for each nucleotide using a hash-map-based prefix-sum approach.
 The complexity of the approach is *O(n)* where *n* is the number of characters
 in the given sample.
+
+After adding a feature for each nucleotide for each sample, our sample has the following
+fields (a dummy example for k=3):
+
+```
+{
+	gene sequence: ["A","T",...,"C"],
+        gene family: "INS",
+        subseqs_A_k3: 12,
+        subseqs_T_k3: 84,
+        subseqs_G_k3: 7,
+        subseqs_C_k3: 4
+}
+```
 
 ## Applying ML Algorithms to Analyze Relationship between Gene Subsequence and Family
 

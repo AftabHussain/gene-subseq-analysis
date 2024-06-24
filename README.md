@@ -24,7 +24,7 @@ Each gene sequence consists of 150 characters. Here is an example:
 
 ```
 {
-	gene sequence: "ATGGCCCCTGTG...GATGCC"
+	gene sequence: ["A","T",...,"C"]
         gene family: "INS"
 }
 ```
@@ -42,7 +42,7 @@ this feature for each nucleotide using a hash-map-based prefix-sum approach.
 The complexity of the approach is *O(n)* where *n* is the number of characters
 in the given sample.
 
-### Applying ML Algorithms to Analyze Relationship between Gene Subsequence and Family
+## Applying ML Algorithms to Analyze Relationship between Gene Subsequence and Family
 
 We build a tool using which different machine learning algorithms can be applied
 to predict gene family from nucleotide-count subsequence feature. 
@@ -52,6 +52,3 @@ to predict gene family from nucleotide-count subsequence feature.
 - Wikipedia, Nucleic Acid Sequence [(link)](https://en.wikipedia.org/wiki/Nucleic_acid_sequence)
 
 
-
- 
- 
